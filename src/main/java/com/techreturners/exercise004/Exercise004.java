@@ -5,15 +5,20 @@ import java.time.LocalDateTime;
 
 public class Exercise004 {
 
+    private LocalDateTime newDateTime;
+    private LocalDateTime convertedDateTime;
+
     public Exercise004(LocalDate date) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        convertedDateTime = date.atStartOfDay();
+        this.newDateTime = convertedDateTime.plusSeconds(1000000000);
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        newDateTime = dateTime.plusSeconds(1000000000);
+        this.newDateTime = newDateTime;
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        return newDateTime;
     }
 }
