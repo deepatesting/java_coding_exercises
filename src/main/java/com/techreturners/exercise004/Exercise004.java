@@ -9,16 +9,15 @@ public class Exercise004 {
     private LocalDateTime convertedDateTime;
 
     public Exercise004(LocalDate date) {
-        convertedDateTime = date.atStartOfDay();
-        this.newDateTime = convertedDateTime.plusSeconds(1000000000);
+        this.convertedDateTime = date.atStartOfDay();
+        this.newDateTime = this.convertedDateTime.plusSeconds(1000000000);
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        newDateTime = dateTime.plusSeconds(1000000000);
-        this.newDateTime = newDateTime;
+        this.newDateTime = dateTime.plusSeconds(1000000000);
     }
 
     public LocalDateTime getDateTime() {
-        return newDateTime;
+        return this.newDateTime;
     }
 }
