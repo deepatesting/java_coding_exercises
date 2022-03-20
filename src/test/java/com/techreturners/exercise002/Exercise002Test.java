@@ -24,8 +24,8 @@ public class Exercise002Test {
         Person p1 = new Person("Peter", "Smith", "Manchester", 17);
         Person p2 = new Person("Francis", "Farmer", "Leeds", 18);
 
-        assertEquals(false, ex002.canWatchFilm(17));
-        assertEquals(true, ex002.canWatchFilm(18));
+        assertEquals(false, ex002.canWatchFilm(p1.getAge()));
+        assertEquals(true, ex002.canWatchFilm(p2.getAge()));
     }
 
     @Test

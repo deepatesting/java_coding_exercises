@@ -3,6 +3,7 @@ package com.techreturners.exercise001;
 import java.util.List;
 
 public class Exercise001 {
+
     public String capitalizeWord(String word) {
         if (word.isEmpty()){
             return "";
@@ -33,14 +34,11 @@ public class Exercise001 {
 
         newString.append(sentence);
         newString.reverse();
-        //String newReverseString = new String(newString);
         return newString.toString();
     }
 
     public int countLinuxUsers(List<User> users) {
         int count = 0;
-        //System.out.println(users.size());
-        //for (int i = 0; i < users.size(); i++){
         for(User user: users){
             if (user.getType() == "Linux"){
                 count++;
